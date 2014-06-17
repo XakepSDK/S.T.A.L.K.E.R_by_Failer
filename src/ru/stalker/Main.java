@@ -15,6 +15,6 @@ public class Main extends JavaPlugin implements Listener {
 		System.out.println("S.T.A.L.K.E.R by Failer activated!");
 		Bukkit.getPluginManager().registerEvents(this, this);
 		Timer.timer(this);
-	}
+	} 
 
 }

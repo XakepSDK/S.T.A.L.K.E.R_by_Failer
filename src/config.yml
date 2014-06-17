@@ -6,7 +6,7 @@ stalker:
 # rand: возможные значения true и false ! если true то время между выбросами рандомное
 # если false то время берется из time ! значения в time целые числа! 1 сек = 20 тиков! время указывать в тиках.
 
-# Plugin by Failer
+# Plugin by Failer 
 # failerept8@gmail.com
 # спасибки сюда:
 # R261034216073

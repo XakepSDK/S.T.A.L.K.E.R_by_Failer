@@ -21,7 +21,7 @@ public class CheckLocation {
 			cx = player.getLocation().getBlockX();
 			cz = player.getLocation().getBlockZ();
 			if (plugin.getServer().getWorld(world).getBlockAt(cx, 0, cz)
-					.getType() != Material.REDSTONE_BLOCK) {
+					.getType() != Material.REDSTONE_BLOCK) { 
 				player.damage(999999);
 			}
 

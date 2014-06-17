@@ -30,7 +30,7 @@ public class Timer {
 				.runTaskTimerAsynchronously(plugin, new Runnable() {
 					@Override
 					public void run() {
-
+ 
 						rnd--;
 
 						if (rnd == 0) {

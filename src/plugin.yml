@@ -1,7 +1,5 @@
 name: S.T.A.L.K.E.R
 main: ru.stalker.Main
-description: bla bla bla
+description: S.T.A.L.K.E.R
 version: 0.2
-commands:
-   reload:
-       description: reload plugin
+
