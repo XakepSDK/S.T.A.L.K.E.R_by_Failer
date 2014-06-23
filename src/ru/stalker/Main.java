@@ -42,30 +42,33 @@ public class Main extends JavaPlugin implements Listener {
 				Random r = new Random();
 				boolean ra = r.nextInt(500) < 50;
 				if (ra == true) {
-					int poison = this.getConfig().getInt("stalker.poison");
-					player.addPotionEffect(new PotionEffect(
-							PotionEffectType.POISON, poison, 1));
-					if (Players.size() != 0) {
-						System.out.print("true");
-						int k = 0;
-						while (k != Players.size()) {
-							if (Players.get(k).player.getName().equals(
-									player.getName())) {
-								System.out.println("equals true");
+					if (this.getConfig().getBoolean("stalker.main_poison") == true) {
+						int poison = this.getConfig().getInt("stalker.poison");
+						player.addPotionEffect(new PotionEffect(
+								PotionEffectType.POISON, poison, 1));
+					}
+					if (this.getConfig().getBoolean("stalker.bleeding") == true) {
+						if (Players.size() != 0) {
 
-							} else {
-								System.out.println("equals false");
-								if (Players.get(k).player == null)
-									tempPlayer.player = player;
-								tempPlayer.use = true;
-								Players.add(tempPlayer);
+							int k = 0;
+							while (k != Players.size()) {
+								if (Players.get(k).player.getName().equals(
+										player.getName())) {
+
+								} else {
+
+									if (Players.get(k).player == null)
+										tempPlayer.player = player;
+									tempPlayer.use = true;
+									Players.add(tempPlayer);
+								}
+								k++;
 							}
-							k++;
+						} else {
+							tempPlayer.player = player;
+							tempPlayer.use = true;
+							Players.add(tempPlayer);
 						}
-					} else {
-						tempPlayer.player = player;
-						tempPlayer.use = true;
-						Players.add(tempPlayer);
 					}
 
 				}
