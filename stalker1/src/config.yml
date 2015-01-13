@@ -1,0 +1,31 @@
+stalker:
+       world: world
+#мир в котором необходим выброс
+#world where will work emission
+       rand: true
+       time: 600
+       time_stl: 10
+       time_msg: 60
+       msg: Внимание через 60 секунд произойдет выброс. Всем в укрытие
+# rand: возможные значения true и false ! если true то время между выбросами рандомное
+# если false то время берется из time ! значения в time целые числа! (в секундах)
+# rand: true/false! random time between emissions
+# if rand: false then time between emissions = time
+# time_stl: the duration of the emission
+# time_msg: time to send message
+# time_msg: время до отправления сообщения до выброса
+# msg: message to emission
+# msg: текст сообщения
+# all the variables of time specified in seconds
+# все переменные времени указывать в секундах
+#Translation may contain errors
+
+
+
+
+# Plugin by Failer 
+# failerept8@gmail.com
+# спасибки сюда:
+# to thank me:
+# R261034216073
+# Z221643925630
